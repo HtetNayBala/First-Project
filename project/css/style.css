@@ -1,0 +1,446 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;900&family=Roboto:wght@400;700;900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+    transition: 0.3s linear;
+}
+@font-face{
+    font-family: aa;
+    src: url(https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Playfair+Display:wght@500;700;900&family=Roboto:wght@400;700;900&display=swap);
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.shraddha{
+    font-family: aa !important;
+    font-size: 2rem;
+}
+.nav-item{
+    margin-bottom: 10px;
+}
+.nav-bar{
+    position: absolute;
+    top: 0;
+    z-index: 2001;
+}
+.ani-delay-05{
+    animation-delay: 0.5s;
+}
+.ani-delay-1{
+    animation-delay: 1s;
+}
+.ani-delay-2{
+    animation-delay: 1.5s;
+}
+.ani-delay-3{
+    animation-delay: 2s;
+}
+.ani-delay-4{
+    animation-delay: 2.5s;
+}
+.ani-delay-5{
+    animation-delay: 5.5s;
+}
+.home-next-arrow{
+    color: black;
+    position: absolute;
+    bottom: 30px;
+    font-size: 30px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    transition: all 0.3s linear;
+}
+
+#logo path:nth-child(1){
+    stroke-dasharray: 172;
+    stroke-dashoffset: 172;
+    animation: ani 2s linear forwards 0.5s;
+}
+#logo path:nth-child(2){
+    stroke-dasharray: 158;
+    stroke-dashoffset: 158;
+    animation: ani 2s linear forwards 0.8s;
+
+}
+#logo path:nth-child(3){
+    stroke-dasharray: 158;
+    stroke-dashoffset: 158;
+    animation: ani 2s linear forwards 1.1s;
+
+}
+#logo path:nth-child(4){
+    stroke-dasharray: 155;
+    stroke-dashoffset: 155;
+    animation: ani 2s linear forwards 1.4s;
+
+}
+#logo path:nth-child(5){
+    stroke-dasharray: 122;
+    stroke-dashoffset: 122;
+    animation: ani 2s linear forwards 1.7s;
+
+}
+#logo path:nth-child(6){
+    stroke-dasharray: 122;
+    stroke-dashoffset: 122;
+    animation: ani 2s linear forwards 2s;
+
+}
+#logo path:nth-child(7){
+    stroke-dasharray: 122;
+    stroke-dashoffset: 122;
+    animation: ani 2s linear forwards 2.3s;
+
+}
+#logo path:nth-child(8){
+    stroke-dasharray: 139;
+    stroke-dashoffset: 139;
+    animation: ani 2s linear forwards 2.6s;
+
+}
+#logo path:nth-child(9){
+    stroke-dasharray: 139;
+    stroke-dashoffset: 139;
+    animation: ani 2s linear forwards 2.9s;
+
+}
+#logo path:nth-child(10){
+    stroke-dasharray: 150;
+    stroke-dashoffset: 150;
+    animation: ani 2s linear forwards 3.2s;
+
+}
+#logo path:nth-child(11){
+    stroke-dasharray: 126;
+    stroke-dashoffset: 126;
+    animation: ani 2s linear forwards 3.5s;
+
+}
+#logo path:nth-child(12){
+    stroke-dasharray: 128;
+    stroke-dashoffset: 128;
+    animation: ani 2s linear forwards 3.8s;
+
+}
+#logo path:nth-child(13){
+    stroke-dasharray: 128;
+    stroke-dashoffset: 128;
+    animation: ani 2s linear forwards 4.1s;
+
+}
+#logo path:nth-child(14){
+    stroke-dasharray: 155;
+    stroke-dashoffset: 155;
+    animation: ani 2s linear forwards 4.3s;
+}
+.navbar-toggler{
+    border: none !important;
+}
+.navbar-toggler:focus{
+    outline: none !important;
+    box-shadow: 0 0 0 0.25rem white;
+}
+
+.navShow{
+    position: fixed;
+    background-color: #00000090;
+}
+
+.about{
+    background-image: url(../img/Shraddha-hd-1.jpg);
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.about::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+}
+
+.zIndex{
+    z-index: 1;
+}
+.about-card{
+    background: none !important;
+    border: none;
+}
+
+.about-img{
+    position: relative;
+}
+.carousel-item{
+    transition: 0.5s linear;
+}
+.carousel-item img:hover{
+    transform: rotate(10deg);
+}
+#heart-img{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: 50px;
+    height: 50px;
+    animation: heart-ani 3s linear;
+}
+
+#img-transion{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.5s ease-in;
+}
+#img-transion:hover{
+    opacity: 1;
+}
+#text-transion{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+#text-transion:hover{
+    opacity: 1;
+}
+.about-more a{
+    padding: 0.1rem 1.5rem;
+    border-radius: 10rem;
+}
+.movies-card{
+    background: none !important;
+    border: none;
+}
+.movie-card{
+    border: 2px solid white;
+}
+.movies-card:hover{
+    transform: scale(0.98);
+}
+#video-icon{
+    animation: video-ani 5s ease-in-out alternate 1 forwards;
+}
+#heart-icon{
+    animation: heart-ani 5s ease-in alternate 1 1s forwards;
+}
+
+.movie-more a{
+    padding: 0.1rem 1.3rem;
+    border-radius: 10rem;
+}
+.song{
+    background-image: url(../img/music-background-min-min.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+#song-name:hover{
+    transform: translateX(20px);
+}
+.song::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #232526;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    opacity: 0.5;    
+}
+
+iframe:hover{
+    transform: scale(0.98);
+}
+.end{
+    background-image: url(../img/shraddha-portrait-9.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.end::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    top: 0;
+    left: 0;
+    position: absolute;
+    opacity: 0.7;
+}
+.form{
+    position: relative;
+    height: 60px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+.form input{
+    width: 100%;
+    height: 100%;
+    padding-top: 20px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #252525;
+    border-bottom: 1px solid white;
+}
+.form label{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    pointer-events: none;
+    width: 100%;
+    height: 100%;         
+}
+.form label::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid blue;
+    transform: translateX(-100%);
+}
+
+.form input:focus + .labelName .spanText
+{
+    transform: translateY(-150%);
+    color: blue;
+    font-size: 15px;
+}
+.form input:valid + .labelName .spanText{
+    transform: translateY(-150%);
+}
+
+.form input:focus + label::after,
+.form input:valid + label::after{
+    transform: translateX(0%);
+}
+
+.spanText{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    color: white;
+}
+.end img:hover{
+    transform: translate(10px);
+}
+
+.social-icon a:hover{
+    transform: translate(10px);
+}
+
+#about,#movie,#song,#end{
+    padding-top: 50px;
+}
+.underline{
+    border-bottom: 2px solid white;
+}
+@keyframes ani{
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes video-ani{
+    10%{
+       
+        transform: translate(100px,0px);
+    }20%{
+      
+        transform: translate(200px,-50px);
+    }40%{
+       
+        transform: translate(300px,0px);
+    }60%{
+      
+        transform: translate(400px,-50px);
+    }80%{
+       
+        transform: translate(500px,0px);
+    }90%{
+      
+        transform: translate(600px,-100px);
+    }93%{
+      
+        transform: translate(700px,0);
+    }95%{
+        transform: translate(800px,-50px);
+    }99%{
+        transform: translate(900px,0px);
+    }100%{
+        transform: translate(2000px,0px);
+    }
+}
+
+@keyframes heart-ani{
+    10%{
+        transform: translate(100px,-10px);
+    }30%{
+        transform: translate(200px,-20px);
+    }50%{
+        transform: translate(300px,-30px);
+    }60%{
+        transform: translate(400px,-50px);
+    }70%{
+        transform: translate(500px,-100px);
+    }80%{
+        transform: translate(600px,-150px);
+    }100%{
+        transform: translate(600px,-155px);
+    }
+}
+@media screen and (max-width:780px){
+    .nav-link.btn{
+        width: 30%;
+    } 
+}
+
+@media screen and (max-width:480px){
+    .home{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    
+}
+
